@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="./assets/img/fihou_logo.jpg">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!--=============== ICONSCOUT ===============-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Fithou News</title>
+</head>
+<body>
+    <div class="app">
+        <div class="home">
+            <div class="header">
+                <a href="#" class="header__logo">
+                    <img src="./assets/img/fihou_logo.jpg" class="header__logo-img" alt="">
+                </a>
+                <div class="header__search">
+                    <i class="uil uil-search header__search-icon"></i>
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm Fithou">
+                </div>
+                <div class="header__menu" onclick="showNavMenu()">
+                    <i class="uil uil-bars header__menu-icon"></i>
+                </div>
+                <div class="header__menu-nav-overlay"></div>
+                <div class="header__menu-nav-container">
+                    <a href="#" class="header__menu-nav-logo">
+                        <img src="./assets/img/fihou_logo.jpg" class="header__menu-nav-logo-img" alt="">
+                    </a>  
+                    <div class="header__menu-nav-list">
+                        <div class="header__menu-nav-item">
+                            <a href="#" class="header__menu-nav-link">
+                                Giới thiệu
+                            </a>
+                        </div>
+                        <div class="header__menu-nav-item">
+                            <div class="header__menu-nav-item-container">
+                                <a href="javascript:showCollapse()" class="header__menu-nav-link">
+                                    Tổ chức
+                                </a>
+                                <i class="uil uil-angle-down header__menu-nav-item-icon"></i>
+                            </div>
+                            <div class="header__menu-nav-item-collapse">
+                                <a href="#" class="header__menu-nav-item-collapse-link">
+                                    Sơ đồ tổ chức
+                                </a>
+                                <a href="#" class="header__menu-nav-item-collapse-link">
+                                    Hội đồng khoa học
+                                </a>
+                                <a href="#" class="header__menu-nav-item-collapse-link">
+                                    Các bộ môn
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__menu-nav-item">
+                            <a href="#" class="header__menu-nav-link">
+                                Tin tức
+                            </a>
+                        </div>
+                        <div class="header__menu-nav-item">
+                            <a href="#" class="header__menu-nav-link">
+                                NCKH
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="app__container">
+                <div class="home__banner">
+                    <div class="home__banner-list">
+                        <a href="#" class="home__banner-item">
+                            <div class="home__banner-item-img" style="background-image: url(./assets/img/slide_1.jpg);"></div>
+                            <div class="home__banner-item-desc">
+                                <div class="home__banner-item-sub">
+                                    Khoa CNTT tham dự Đại hội đại biểu nhiệm kỳ II CLB Khoa - 
+                                    Trường - Viện CNTT - TT Việt Nam
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="home__banner-item">
+                            <div class="home__banner-item-img" style="background-image: url(./assets/img/slide_DesignPattern.jpg);"></div>
+                            <div class="home__banner-item-desc">
+                                <div class="home__banner-item-sub">
+                                    Các mẫu thiết kế kinh điển trong lập trình" được giới thiệu tại tech-talk của khoa CNTT - 
+                                    Trường ĐH Mở Hà Nội
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="home__banner-item">
+                            <div class="home__banner-item-img" style="background-image: url(./assets/img/slide_hoangux.jpg);"></div>
+                            <div class="home__banner-item-desc">
+                                <div class="home__banner-item-sub">
+                                    Nhiều kiến thức thực tế bổ ích trong tech talk 
+                                    “Tầm quan trọng và cách thực hiện UI, UX trong doanh nghiệp thực tế"
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="home__banner-item">
+                            <div class="home__banner-item-img" style="background-image: url(./assets/img/slide_NCKH2021.png);"></div>
+                            <div class="home__banner-item-desc">
+                                <div class="home__banner-item-sub">
+                                    Thông báo Kết quả Đề tài NCKH SV năm học 2020-2021
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="home__banner-item">
+                            <div class="home__banner-item-img" style="background-image: url(./assets/img/slide_VCCorp.png);"></div>
+                            <div class="home__banner-item-desc">
+                                <div class="home__banner-item-sub">
+                                    Thông báo về Hội thảo Hướng nghiệp dành cho sinh viên giữa và cuối khóa học kì 2 năm học 2022 - 2023
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="home__banner-arrow">
+                        <div class="home__banner-arrow-prev">
+                            <i class="uil uil-angle-left home__banner-arrow-icon"></i>
+                        </div>
+                        <div class="home__banner-arrow-next">
+                            <i class="uil uil-angle-right home__banner-arrow-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__category">
+                    <div class="home__category-list">
+                        <div class="home__category-item">
+                            <div class="home__category-item-title">Tin hoạt động</div>
+                            <div class="home__news-list">
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home__category-item">
+                            <div class="home__category-item-title">Đào tạo</div>
+                            <div class="home__news-list">
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="home__category-item">
+                            <div class="home__category-item-title">Kế hoạch</div>
+                            <div class="home__news-list">
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="home__news-item">
+                                    <div class="home__news-item-thumb">
+                                        <img src="./assets/img/fihou_logo.jpg" class="home__news-item-img" alt="">
+                                    </div>
+                                    <div class="home__news-item-desc">
+                                        <div class="home__news-item-title">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số
+                                        </div>
+                                        <div class="home__news-item-sub">
+                                            Chương trình "Quản lý Định danh và Đảm bảo An ninh Tài sản CNTT trong kỷ nguyên số" 
+                                            được tổ chức kết hợp giữa khoa CNTT và công ty I3 Network System,
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home__table hide-on-destop hide-on-mobile">
+            Sản phẩm chưa được tối ưu trên máy tính bảng. Vui lòng sử dụng
+            điện thoại và laptop để có trải nghiệm tốt hơn!
+        </div>
+        <div class="home__destop hide-on-table hide-on-mobile">
+            Sản phẩm chưa được tối ưu trên laptop. Vui lòng sử dụng
+            điện thoại và máy tính bảng để có trải nghiệm tốt hơn!
+        </div>
+    </div>
+</body>
+<script src="./assets/js/index.js"></script>
+</html>
